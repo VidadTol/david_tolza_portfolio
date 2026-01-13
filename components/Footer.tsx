@@ -39,29 +39,32 @@ export default function Footer() {
         ) : (
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-              <a
-                href="mailto:vidadtol31@gmail.com"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-blue-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
-                aria-label="Envoyer un email à David Tolza"
-              >
-                <Mail className="w-5 h-5" />
-                <span className="text-sm md:text-base">vidadtol31@gmail.com</span>
-              </a>
-              <a
-                href="tel:0687232667"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-slate-800 text-white font-bold py-4 px-8 rounded-2xl border border-slate-700 hover:border-slate-500 transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
-                aria-label="Appeler David Tolza au 06 87 23 26 67"
-              >
-                <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-sm md:text-base">06 87 23 26 67</span>
-              </a>
+              <div className="w-full sm:w-auto group relative hover:z-[100]">
+                <a
+                  href="mailto:vidadtol31@gmail.com"
+                  className="flex items-center justify-center gap-3 bg-blue-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg transition-all duration-500 group-hover:scale-125 group-hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+                  aria-label="Envoyer un email à David Tolza"
+                >
+                  <Mail className="w-10 h-10" />
+                  <span className="text-lg md:text-base">vidadtol31@gmail.com</span>
+                </a>
+              </div>
+              <div className="w-full sm:w-auto group relative hover:z-50">
+                <button
+                  className="w-full flex items-center justify-center gap-3 bg-slate-800 text-white font-bold py-4 px-8 rounded-2xl border border-slate-700 transition-all duration-500 group-hover:scale-125 group-hover:border-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+                  aria-label="Appeler David Tolza au 06 87 23 26 67"
+                >
+                  <Phone className="w-10 h-10 text-blue-400" />
+                  <span className="text-lg md:text-base">06 87 23 26 67</span>
+                </button>
+              </div>
             </div>
             <button
               onClick={() => setShowForm(true)}
-              className="text-sm text-slate-400 hover:text-slate-200 transition underline"
+              className="text-2xl mt-6 text-slate-400 hover:text-slate-200 cursor-pointer transition-all hover:underline hover:underline-offset-4"
               aria-label="Ouvrir le formulaire de contact"
             >
-              Ou utilisez le formulaire ci-dessous →
+              Ouvrire le formulaire →
             </button>
           </div>
         )}
