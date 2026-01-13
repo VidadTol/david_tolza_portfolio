@@ -28,14 +28,14 @@ export default function QualitiesBadges() {
 
   return (
     <div
-      className="flex gap-3 pt-6 justify-around w-full max-w-6xl px-6"
+      className="flex flex-wrap gap-3 pt-6 justify-center w-full max-w-6xl px-6"
       role="region"
       aria-label="Qualités professionnelles"
     >
       {badges.map((badge) => (
         <div
           key={badge.label}
-          className="group relative flex-1"
+          className="group relative"
           role="img"
           aria-label={badge.label}
         >
@@ -44,7 +44,7 @@ export default function QualitiesBadges() {
             aria-hidden="true"
           ></div>
           <span
-            className={`relative px-3 py-2 bg-slate-900 border ${badge.borderColor} rounded-full ${badge.textColor} text-[10px] md:text-xs font-bold flex items-center justify-center gap-2 whitespace-nowrap`}
+            className={`relative px-3 py-2 bg-slate-900 border ${badge.borderColor} rounded-full ${badge.textColor} text-[10px] md:text-xs font-bold flex items-center justify-center gap-2`}
           >
             <span
               className={`w-2 h-2 ${badge.bgColor} rounded-full animate-pulse`}

@@ -24,12 +24,21 @@ export default function MethodSection() {
   ];
 
   const colorMap: Record<string, Record<string, string>> = {
-    blue: { text: "text-blue-500", border: "group-hover:border-blue-500" },
+    blue: {
+      text: "text-blue-500",
+      border: "group-hover:border-blue-500",
+      glowBg: "bg-blue-600",
+    },
     purple: {
       text: "text-purple-500",
       border: "group-hover:border-purple-500",
+      glowBg: "bg-purple-600",
     },
-    pink: { text: "text-pink-500", border: "group-hover:border-pink-500" },
+    pink: {
+      text: "text-pink-500",
+      border: "group-hover:border-pink-500",
+      glowBg: "bg-pink-600",
+    },
   };
 
   return (
@@ -47,11 +56,11 @@ export default function MethodSection() {
             aria-label={`Étape ${method.number}: ${method.title}`}
           >
             <div
-              className={`absolute -inset-1 bg-${method.color}-600 rounded-2xl blur opacity-0 group-hover:opacity-40 transition duration-500`}
+              className={`absolute -inset-1 ${colorMap[method.color].glowBg} rounded-2xl blur opacity-40 md:opacity-0 md:group-hover:opacity-40 transition duration-500`}
               aria-hidden="true"
             ></div>
             <div
-              className={`relative p-8 rounded-2xl bg-slate-900/30 border border-slate-800 ${colorMap[method.color].border} transition-all duration-500 backdrop-blur-sm`}
+              className={`relative p-8 rounded-2xl bg-slate-900/30 border border-slate-900 md:border-slate-800 ${colorMap[method.color].border} transition-all duration-500 backdrop-blur-sm md:group-hover:scale-125 md:group-hover:z-10`}
             >
               <div
                 className={`${colorMap[method.color].text} text-4xl font-bold mb-4`}

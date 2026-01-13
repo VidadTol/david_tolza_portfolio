@@ -4,7 +4,7 @@ import Typewriter from "./Typewriter";
 export default function Banner() {
   return (
     <>
-      <div className="w-full h-[200px] md:h-[350px] relative mb-0 overflow-hidden rounded-b-3xl shadow-lg">
+      <div className="w-full h-[120px] md:h-[350px] relative mb-0 overflow-hidden rounded-b-3xl shadow-lg">
         <Image
           src="/banniere1.png"
           alt="Fond David Tolza - Développeur Web et Mobile"
@@ -27,7 +27,8 @@ export default function Banner() {
 
       <div className="w-full flex justify-center px-2 text-center">
         <Typewriter
-          text="Donnez vie à votre histoire à travers un site qui vous ressemble"
+          /*text="Donnez vie à votre histoire à travers un site qui vous ressemble"*/
+          text="Raconter votre histoire à travers votre site sur mesure."
           className="text-xl md:text-4xl mt-6 font-extrabold italic text-gradient-hero drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]"
         />
       </div>

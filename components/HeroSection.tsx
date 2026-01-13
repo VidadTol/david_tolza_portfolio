@@ -6,14 +6,14 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* COLONNE GAUCHE : LOGO & NOM */}
         <div className="flex flex-col items-center lg:items-start space-y-4 group">
-          <div className="relative m-12">
-            <div className="absolute -inset-1 bg-blue-500 rounded-full blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
+          <div className="relative m-8 lg:m-12">
+            <div className="absolute -inset-2 lg:-inset-3 bg-blue-500 rounded-full blur-lg opacity-90 md:opacity-50 md:group-hover:opacity-90 transition duration-500 md:group-hover:blur-xl"></div>
             <Image
               src="/logo2.png"
               alt="Logo David Tolza - Développeur Web et Mobile Freelance"
               className="relative object-contain"
-              width={160}
-              height={160}
+              width={200}
+              height={200}
               priority
               quality={90}
             />

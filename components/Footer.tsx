@@ -8,9 +8,9 @@ export default function Footer() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <footer className="w-full py-20 px-6 bg-slate-950 border-t border-white/5">
+    <footer className="w-full py-5 px-6 bg-slate-950 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white leading-tight">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white leading-tight">
           Prêt à collaborer ?
         </h2>
         <p className="text-slate-400 mb-12 text-lg md:text-xl max-w-2xl mx-auto text-justify md:text-center">

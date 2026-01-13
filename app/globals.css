@@ -41,7 +41,7 @@ textarea:focus-visible {
   }
 }
 
-/* Skip to main content link (bon à avoir pour l'accessibilité) */
+/* Skip to main content link */
 .skip-to-main {
   position: absolute;
   top: -40px;
@@ -58,9 +58,9 @@ textarea:focus-visible {
 }
 
 @layer utilities {
-  /* 1. EFFET ZOOM (Pour la fin du Typewriter) */
+  /* 1. EFFET ZOOM */
   .animate-zoom-suave {
-    animation: zoomSuave 3s ease-in-out infinite alternate;
+    animation: zoomSuave 2s ease-in-out infinite alternate;
   }
 
   @keyframes zoomSuave {
