@@ -12,8 +12,13 @@ export default function ServicesSection() {
 
   const services = [
     "Création de sites vitrines et e-commerce",
+    "Dépannage & correction de bugs (formulaires, boutons, liens cassés)",
+    "Optimisation de performance (vitesse, Core Web Vitals)",
+    "Migration vers technos modernes (anciennes vers Next.js, React)",
+    "Intégration d'APIs externes (paiements, CMS, services)",
+    "Support et maintenance technique ongoing",
+    "Responsive design & UX improvement",
     "Refonte et optimisation de sites existants",
-    "Applications modernes",
   ];
 
   return (
@@ -47,11 +52,13 @@ export default function ServicesSection() {
               {services.map((service, index) => {
                 const colors = [
                   { dot: "bg-blue-500", shadow: "shadow-[0_0_8px_#3b82f6]" },
-                  {
-                    dot: "bg-purple-500",
-                    shadow: "shadow-[0_0_8px_#a855f7]",
-                  },
+                  { dot: "bg-purple-500", shadow: "shadow-[0_0_8px_#a855f7]" },
                   { dot: "bg-pink-500", shadow: "shadow-[0_0_8px_#ec4899]" },
+                  { dot: "bg-cyan-400", shadow: "shadow-[0_0_8px_#22d3ee]" },
+                  { dot: "bg-blue-400", shadow: "shadow-[0_0_8px_#60a5fa]" },
+                  { dot: "bg-purple-400", shadow: "shadow-[0_0_8px_#c084fc]" },
+                  { dot: "bg-pink-400", shadow: "shadow-[0_0_8px_#f472b6]" },
+                  { dot: "bg-indigo-500", shadow: "shadow-[0_0_8px_#6366f1]" },
                 ];
                 return (
                   <li key={service} className="flex items-start gap-3">
