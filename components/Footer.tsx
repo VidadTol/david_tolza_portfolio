@@ -8,18 +8,16 @@ export default function Footer() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <footer className="w-full py-5 px-6 bg-slate-950 border-t border-white/5">
+    <footer className="w-full py-5 px-6 bg-slate-950">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white leading-tight">
           Prêt à collaborer ?
         </h2>
-        <p className="text-slate-400 mb-12 text-lg md:text-xl max-w-2xl mx-auto text-justify md:text-center">
-          Si vous avez une question ou un projet en tête, parlons-en ensemble
-          pour{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-            créer un site qui raconte votre histoire
+        <p className="text-slate-300 mb-12 text-lg md:text-2xl max-w-2xl mx-auto text-center space-y-4">
+          Un bug à corriger ou un nouveau projet à lancer ? <br />
+          <span className="block pt-4 bg-gradient-to-r md:text-1sxl from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+            Parlons-en pour que votre site raconte votre histoire...
           </span>
-          .
         </p>
 
         {/* Formulaire de Contact */}

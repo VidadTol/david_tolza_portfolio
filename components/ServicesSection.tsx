@@ -22,7 +22,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="w-full relative overflow-hidden bg-[#0a0f1a] py-24 px-6 border-y border-blue-900/20">
+    <section className="w-full relative overflow-hidden bg-[#0a0f1a] py-12 px-6 border-y border-blue-900/20">
       {/* Halos de fond */}
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(37,99,235,0.1),transparent)]"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(147,51,234,0.1),transparent)]"></div>

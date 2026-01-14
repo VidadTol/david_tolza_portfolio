@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -11,6 +11,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// Viewport config - séparé de metadata
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 // Meta tags complets avec Open Graph et Twitter Card
 export const metadata: Metadata = {
@@ -63,7 +70,6 @@ export const metadata: Metadata = {
   },
 
   // Métadonnées additionnelles
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
   applicationName: "Portfolio David Tolza",

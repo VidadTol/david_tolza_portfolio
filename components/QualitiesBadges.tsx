@@ -28,7 +28,7 @@ export default function QualitiesBadges() {
 
   return (
     <div
-      className="flex flex-wrap gap-3 pt-6 justify-center w-full max-w-6xl px-6"
+      className="flex flex-wrap gap-4 pt-1 justify-center w-full max-w-6xl px-6"
       role="region"
       aria-label="Qualités professionnelles"
     >

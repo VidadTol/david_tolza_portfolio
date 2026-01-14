@@ -5,23 +5,23 @@ export default function HeroSection() {
     <section className="w-full max-w-6xl mt-9 px-6 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* COLONNE GAUCHE : LOGO & NOM */}
-        <div className="flex flex-col items-center lg:items-start space-y-4 group">
-          <div className="relative m-8 lg:m-12">
+        <div className="flex flex-col items-center space-y-4 group">
+          <div className="relative">
             <div className="absolute -inset-2 lg:-inset-3 bg-blue-500 rounded-full blur-lg opacity-90 md:opacity-50 md:group-hover:opacity-90 transition duration-500 md:group-hover:blur-xl"></div>
             <Image
               src="/logo2.png"
               alt="Logo David Tolza - Développeur Web et Mobile Freelance"
-              className="relative object-contain"
-              width={200}
-              height={200}
+              className="relative object-contain w-[160px] h-[160px] md:w-[250px] md:h-[250px]"
+              width={240}
+              height={240}
               priority
               quality={90}
             />
           </div>
 
-          <div className="flex flex-col items-center lg:items-start overflow-hidden">
+          <div className="flex flex-col items-center overflow-hidden">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold tracking-[0.2em] text-white uppercase text-center lg:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-[0.2em] text-white uppercase text-center">
                 David <span className="text-blue-400">Tolza</span>
               </h2>
               <div className="h-1 w-full bg-gradient-to-r from-blue-600 via-purple-500 to-transparent mt-2 rounded-full shadow-[0_0_10px_rgba(37,99,235,0.5)]"></div>
