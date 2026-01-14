@@ -1,4 +1,5 @@
 import { Atom } from "lucide-react";
+import Image from "next/image";
 
 export default function ServicesSection() {
   const technologies = [
@@ -28,27 +29,38 @@ export default function ServicesSection() {
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(147,51,234,0.1),transparent)]"></div>
 
       <div className="max-w-6xl mx-auto flex flex-col items-center relative z-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 uppercase tracking-widest text-white px-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 uppercase tracking-widest text-white px-4">
           Mes Services
         </h2>
 
         <div className="w-full max-w-2xl group relative">
-          {/* LE NÉON QUI ANIME TOUT SEUL */}
+          {/* LE NÉON ANIME */}
           <div
             className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-[2rem] blur animate-pulse opacity-50 group-hover:opacity-100 transition duration-1000"
             style={{ animationDuration: "1s" }}
           ></div>
 
-          <div className="relative bg-slate-900/90 p-8 md:p-14 rounded-[2rem] border border-white/10 flex flex-col items-center backdrop-blur-sm shadow-2xl">
-            <div className="mb-6 p-4 bg-gradient-to-br from-blue-600 to-purple-700 rounded-2xl shadow-lg">
-              <Atom className="w-10 h-10 text-white" />
+          <div className="relative bg-slate-900/90 p-8 md:p-14 rounded-[2rem] border border-white/10 flex flex-col items-center backdrop-blur-sm shadow-2xl overflow-hidden">
+            {/* Image background */}
+            <div className="absolute inset-0 opacity-60 md:opacity-40 pointer-events-none">
+              <Image
+                src="/Services.png"
+                alt=""
+                fill
+                className="object-cover"
+                quality={75}
+              />
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center">
+            {/* Contenu */}
+            <div className="relative z-10">
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center drop-shadow-[0_2px_8px_rgba(59,130,246,0.6)]">
               Développement Web & Mobile
             </h3>
 
-            <ul className="text-slate-300 space-y-4 text-base md:text-xl w-full">
+            <ul className="text-white space-y-4 text-base md:text-xl w-full font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               {services.map((service, index) => {
                 const colors = [
                   { dot: "bg-blue-500", shadow: "shadow-[0_0_8px_#3b82f6]" },
@@ -75,7 +87,7 @@ export default function ServicesSection() {
               {technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-slate-950/50 rounded-full text-[10px] md:text-xs font-bold text-blue-300 border border-slate-800"
+                  className="px-3 py-1 bg-blue-600/40 rounded-full text-[10px] md:text-xs font-bold text-white border border-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
                 >
                   {tech}
                 </span>
