@@ -100,7 +100,7 @@ export default function RootLayout({
           addressCountry: "FR",
         },
         sameAs: [
-          "https://github.com/VidadTol", // À adapter avec ton vrai profil si tu en as un
+          "https://github.com/VidadTol",
 
         ],
       },
