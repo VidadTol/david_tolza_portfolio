@@ -21,39 +21,34 @@ export const viewport: Viewport = {
 
 // Meta tags complets avec Open Graph et Twitter Card
 export const metadata: Metadata = {
-  title: "David Tolza | Développeur Web & Mobile Freelance",
-  description: "Un problème ? Une solution. Je vous propose mes services de développement web et mobile sur-mesure. DWWM RNCP 5, créateur de sites modernes et performants.",
-  keywords: ["développeur web", "développeur mobile", "freelance", "Next.js", "React", "web design", "e-commerce"],
+  title: "David Tolza | Développeur Web & Mobile Freelance à Castelmaurou",
+  description:
+    "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
+  keywords: [
+    "développeur web Castelmaurou",
+    "développeur web Toulouse",
+    "développeur mobile Castelmaurou",
+    "création site internet 31",
+    "freelance",
+    "Next.js",
+    "React",
+    "web design",
+    "e-commerce",
+  ],
   authors: [{ name: "David Tolza" }],
   creator: "David Tolza",
-  
+
   // Open Graph pour les réseaux sociaux
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://david-tolza.fr", // À adapter avec ton domaine réel
+    url: "https://david-tolza.vercel.app/",
     siteName: "David Tolza - Développeur Web & Mobile",
-    title: "David Tolza | Développeur Web & Mobile Freelance",
-    description: "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
-    images: [
-      {
-        url: "https://david-tolza.fr/og-image.png", // À créer/adapter
-        width: 1200,
-        height: 630,
-        alt: "David Tolza - Développeur Web & Mobile",
-      },
-    ],
+    title: "David Tolza | Développeur Web & Mobile Freelance à Castelmaurou",
+    description:
+      "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
   },
-
   // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    site: "@david_tolza", // À adapter si tu as un compte Twitter
-    creator: "@david_tolza",
-    title: "David Tolza | Développeur Web & Mobile Freelance",
-    description: "Développement web et mobile sur-mesure. Donnez vie à votre histoire.",
-    images: ["https://david-tolza.fr/og-image.png"], // À créer/adapter
-  },
 
   // Robots et indexation
   robots: {
@@ -87,37 +82,67 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://david-tolza.fr",
+        "@id": "https://david-tolza.vercel.app/",
         name: "David Tolza",
-        url: "https://david-tolza.fr",
-        image: "https://david-tolza.fr/logo2.png",
-        description: "Développeur Web & Mobile Freelance - Création de sites modernes et performants",
+        url: "https://david-tolza.vercel.app/",
+        image: "https://david-tolza.vercel.app/logo2.png",
+        description:
+          "Développeur Web & Mobile Freelance à Castelmaurou - Création de sites modernes et performants",
         jobTitle: "Développeur Web et Mobile",
         email: "vidadtol31@gmail.com",
         telephone: "+33687232667",
         address: {
           "@type": "PostalAddress",
+          "addressLocality": "Castelmaurou", 
+          "postalCode": "31180",
           addressCountry: "FR",
         },
-        sameAs: [
-          "https://github.com/VidadTol",
-
-        ],
+        sameAs: ["https://github.com/VidadTol"],
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://david-tolza.fr",
+        "@id": "https://david-tolza.vercel.app/",
         name: "David Tolza - Développement Web",
-        image: "https://david-tolza.fr/logo2.png",
+        image: "https://david-tolza.vercel.app/logo2.png",
         description: "Services de développement web et mobile sur-mesure",
         telephone: "+33687232667",
         email: "vidadtol31@gmail.com",
-        areaServed: "FR",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Castelmaurou", 
+          "postalCode": "31180",             
+          "addressCountry": "FR"
+        },
+        areaServed: [
+          "Castelmaurou",
+          "Lapeyrouse-Fossat",
+          "Saint-Geniès-Bellevue",
+          "Pechbonnieu",
+          "Gratentour",
+          "Saint-Loup-Cammas",
+          "Aucamville",
+          "Fonbeauzard",
+          "Saint-Alban",
+          "Bruguières",
+          "Fenouillet",
+          "Saint-Jean",
+          "L'Union",
+          "Rouffiac-Tolosan",
+          "Montrabé",
+          "Beaupuy",
+          "Verfeil",
+          "Garidech",
+          "Montastruc-la-Conseillère",
+          "Saint-Sulpice-la-Pointe",
+          "Buzet-sur-Tarn",
+          "Toulouse",
+        ],
         serviceType: "Web Development",
       },
       {
         "@type": "WebSite",
-        url: "https://david-tolza.fr",
+        url: "https://david-tolza.vercel.app/",
         name: "David Tolza - Développeur Web & Mobile",
         description: "Portfolio et services de développement web et mobile",
       },
@@ -132,11 +157,15 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://david-tolza.fr" />
+        <link rel="canonical" href="https://david-tolza.vercel.app/" />
 
         {/* Preconnect pour les polices Google */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
 
         {/* JSON-LD Schema Markup */}
         <script
