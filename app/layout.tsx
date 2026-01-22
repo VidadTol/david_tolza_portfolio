@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     description:
       "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
   },
+  verification: {
+    google: "fbO0_dj9vDBLlPl7eUTcwrN5dg-BsmAJ0J1g_YnsieE",
+  },
   // Twitter Card
 
   // Robots et indexation
