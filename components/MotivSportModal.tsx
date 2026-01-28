@@ -169,12 +169,11 @@ export default function MotivSportModal({
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {[
-                      "Next.js 15",
-                      "React",
+                      "Next.js",
+                      "Firebase",
                       "TypeScript",
                       "Tailwind CSS",
-                      "Firebase",
-                      "Firestore",
+                      "React",                       
                     ].map((tech) => (
                       <span
                         key={tech}
