@@ -46,11 +46,11 @@ export default function ProjectShowcase() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Colonne GAUCHE : Textes et Badges */}
           <div>
-            <h3 className="text-xl font-bold text-blue-400 mb-4 italic">
+            <h3 className="text-2xl font-bold text-blue-400 mb-4 italic">
               Ma dernière réussite :
             </h3>
 
-            <p className="text-slate-400 text-justify leading-relaxed">
+            <p className="text-slate-200 text-justify leading-relaxed">
               Mon premier projet post-diplôme est une plateforme e-commerce{" "}
               <a
                 href="https://www.isacreas.fr"
@@ -78,7 +78,7 @@ export default function ProjectShowcase() {
             </div>
 
             <div className="mt-8">
-              <p className="text-sm text-slate-500 italic mb-2">
+              <p className="text-sm text-slate-200 italic mb-2">
                 "Créativité, Écoute, Rigueur, analyse et résultat."
               </p>
             </div>
