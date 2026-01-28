@@ -8,8 +8,8 @@ export default function ProjectShowcase() {
 
   const techBadges = [
     {
-      src: "https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js&logoColor=white",
-      alt: "Next.js 15",
+      src: "https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white",
+      alt: "Next.js",
       label: "Performance",
     },
     {
@@ -27,11 +27,6 @@ export default function ProjectShowcase() {
       alt: "Firebase",
       label: "Temps réel via Firestore",
     },
-    {
-      src: "https://img.shields.io/badge/RNCP_Niveau_5-FFD700?style=for-the-badge",
-      alt: "RNCP Certification",
-      label: "RNCP Niveau 5",
-    },
   ];
 
   return (
@@ -44,17 +39,26 @@ export default function ProjectShowcase() {
 
         {/* Mise en page en deux colonnes sur PC */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Colonne GAUCHE : Textes et Badges */}
+          {/* Textes et Badges */}
           <div>
-            <h3 className="text-lg font-bold text-blue-400 mb-4 italic">
+            <h3 className="text-lg font-bold text-blue-400 mb-4 italic flex items-center flex-wrap gap-3">
               Projet de fin de formation :
+              <img
+                src="https://img.shields.io/badge/RNCP_5-007ACC?style=for-the-badge"
+                alt="Certification RNCP 5"
+                className="h-6 not-italic shadow-md"
+              />
             </h3>
 
             <p className="text-slate-400 text-justify leading-relaxed">
               <span className="font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Motiv'Sport
               </span>{" "}
-              Plateforme sociale immersive dédiée à la cohésion sportive. J'ai conçu cette solution Fullstack pour simplifier l'organisation d'événements, la gestion de profils dynamiques et les échanges instantanés en direct.            </p>
+              Plateforme sociale immersive dédiée à la cohésion sportive.
+              Conçu pour simplifier l'organisation
+              d'événements, la gestion de profils dynamiques et les échanges
+              instantanés en direct.{" "}
+            </p>
 
             <div className="flex flex-wrap gap-2 mt-6">
               {techBadges.map((badge, index) => (
@@ -70,7 +74,8 @@ export default function ProjectShowcase() {
 
             <div className="mt-8">
               <p className="text-sm text-slate-400 italic mb-2">
-                "Découverte, Écosystème Moderne, Écoute, Créativité, Collaboration, Adaptabilité, Rigueur"
+                "Découverte, Écosystème Moderne, Écoute, Créativité,
+                Collaboration, Adaptabilité, Rigueur"
               </p>
             </div>
           </div>
