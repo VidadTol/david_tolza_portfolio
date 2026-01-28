@@ -35,10 +35,10 @@ export default function ProjectShowcase() {
   ];
 
   return (
-    <div className="w-full max-w-6xl px-6 py-12">
+    <div className="w-full max-w-1xl md:max-w-5xl px-3 md:px-6 py-6 md:py-12 mx-auto">
       <div
         onClick={() => setIsIsaModalOpen(true)}
-        className="bg-slate-900/80 p-8 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden group cursor-pointer hover:border-slate-700 transition-colors"
+        className="bg-slate-900/80 p-4 md:p-8 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden group cursor-pointer hover:border-slate-700 transition-colors"
       >
         <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
 
@@ -46,7 +46,7 @@ export default function ProjectShowcase() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Colonne GAUCHE : Textes et Badges */}
           <div>
-            <h3 className="text-xl font-bold text-blue-400 mb-4 italic">
+            <h3 className="text-lg font-bold text-blue-400 mb-4 italic">
               Projet de fin de formation :
             </h3>
 
@@ -69,7 +69,7 @@ export default function ProjectShowcase() {
             </div>
 
             <div className="mt-8">
-              <p className="text-sm text-slate-500 italic mb-2">
+              <p className="text-sm text-slate-400 italic mb-2">
                 "Découverte, Écosystème Moderne, Écoute, Créativité, Collaboration, Adaptabilité, Rigueur"
               </p>
             </div>
