@@ -15,14 +15,13 @@ export default function ServicesSection() {
   ];
 
   const services = [
-    "Création de sites vitrines et e-commerce",
-    "Dépannage & correction de bugs (formulaires, boutons, liens cassés)",
-    "Optimisation de performance (vitesse, Core Web Vitals)",
-    "Migration vers technos modernes (anciennes vers Next.js, React)",
-    "Intégration d'APIs externes (paiements, CMS, services)",
-    "Support et maintenance technique ongoing",
-    "Responsive design & UX improvement",
-    "Refonte et optimisation de sites existants",
+    "Création de sites vitrines et e-commerce sur mesure",
+    "Refonte haute performance vers Next.js et React",
+    "Optimisation de la vitesse et du référencement (SEO Google)",
+    "Intégration d'APIs (Paiements, CMS, services tiers)",
+    "Responsive design & Expérience utilisateur (UX)",
+    "Dépannage & maintenance technique continue",
+    "Correction de bugs et support technique réactif",
   ];
 
   return (
@@ -63,7 +62,7 @@ export default function ServicesSection() {
               Développement Web & Mobile
             </h3>
 
-            <ul className="text-white space-y-4 text-base md:text-xl w-full font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <ul className="text-white space-y-4 text-base md:text-lg w-full font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               {services.map((service, index) => {
                 const colors = [
                   { dot: "bg-blue-500", shadow: "shadow-[0_0_8px_#3b82f6]" },
