@@ -8,6 +8,9 @@ export default function ServicesSection() {
     "Tailwind CSS",
     "TypeScript",
     "Firebase",
+    "Stripe",
+    "Resend",
+    "Vercel",
     "OVH",
   ];
 
@@ -87,7 +90,7 @@ export default function ServicesSection() {
               {technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-blue-600/40 rounded-full text-[10px] md:text-xs font-bold text-white border border-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
+                  className="px-3 py-1 bg-blue-600/20 rounded-full text-[10px] md:text-xs font-bold text-white border border-blue-400 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
                 >
                   {tech}
                 </span>
