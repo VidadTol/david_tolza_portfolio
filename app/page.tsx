@@ -7,6 +7,7 @@ import MethodSection from "../components/MethodSection";
 import Separator from "../components/Separator";
 import ServicesSection from "../components/ServicesSection";
 import Footer from "../components/Footer";
+import MotivSportShowcase from "@/components/MotivSportShowcase";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <QualitiesBadges />
       <Separator />
       <ProjectShowcase />
+      <MotivSportShowcase />
       <Separator />
       <MethodSection />
       <Separator />
