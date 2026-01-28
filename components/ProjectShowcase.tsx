@@ -28,9 +28,9 @@ export default function ProjectShowcase() {
       label: "Sécurité des paiements",
     },
     {
-      src: "https://img.shields.io/badge/RGPD-Audit-2ecc71?style=for-the-badge",
-      alt: "Audit RGPD",
-      label: "Conformité légale",
+      src: "https://img.shields.io/badge/Resend-2ecc71?style=for-the-badge",
+      alt: "Resend",
+      label: "Envoi d'emails",
     },
   ];
 
