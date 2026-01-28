@@ -99,16 +99,20 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
                       <span className="text-orange-400 font-semibold">
                         Problème :
                       </span>{" "}
-                      La vente de pièces uniques nécessite une précision absolue : 
-                      une double commande sur un même article est critique pour la réputation de l'artisan
+                      La vente de pièces uniques nécessite une précision absolue
+                      : une double commande sur un même article est critique
+                      pour la réputation de l'artisan
                     </p>
                     <p className="text-slate-300 text-justify leading-relaxed mt-3">
                       <span className="text-blue-400 font-semibold">
                         Solution :
                       </span>{" "}
-                      Architecture "Real-time" via Firebase avec verrouillage des stocks en millisecondes dès la validation Stripe. 
-                      Côté interface, le produit bascule automatiquement en mode "Victime de son succès" : 
-                      le bouton d'achat est instantanément désactivé et remplacé par la mention "Épuisé", rendant toute commande impossible.
+                      Architecture "Real-time" via Firebase avec verrouillage
+                      des stocks en millisecondes dès la validation Stripe. Côté
+                      interface, le produit bascule automatiquement en mode
+                      "Victime de son succès" : le bouton d'achat est
+                      instantanément désactivé et remplacé par la mention
+                      "Épuisé", rendant toute commande impossible.
                     </p>
                   </div>
                 </motion.section>
@@ -164,10 +168,13 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
                       <span className="text-blue-400 font-semibold">
                         Solution :
                       </span>{" "}
-                      Développement d'un moteur d'agrégation de données sur-mesure.
-                      Le système traite et ventile automatiquement chaque transaction pour isoler le Chiffre d'Affaires net, 
-                      les frais de port collectés et les volumes de ventes.
-                      Les indicateurs sont recalculés en temps réel à chaque commande, permettant un pilotage comptable rigoureux au mois ou à l'année.
+                      Développement d'un moteur d'agrégation de données
+                      sur-mesure. Le système traite et ventile automatiquement
+                      chaque transaction pour isoler le Chiffre d'Affaires net,
+                      les frais de port collectés et les volumes de ventes. Les
+                      indicateurs sont recalculés en temps réel à chaque
+                      commande, permettant un pilotage comptable rigoureux au
+                      mois ou à l'année.
                     </p>
                   </div>
                 </motion.section>
@@ -216,10 +223,13 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
                       <span className="text-blue-400 font-semibold">
                         Focus :
                       </span>{" "}
-                      Une vitrine ultra-fluide où la performance technique sert l'esthétique. 
-                      Chaque produit est rigoureusement catalogué et chaque photo bénéficie d'une double compression intelligente. 
-                      Ce procédé garantit un affichage instantané et une qualité visuelle parfaite, 
-                      tout en optimisant l'espace de stockage et la rapidité de navigation sur mobile.
+                      Une vitrine ultra-fluide où la performance technique sert
+                      l'esthétique. Chaque produit est rigoureusement catalogué
+                      et chaque photo bénéficie d'une double compression
+                      intelligente. Ce procédé garantit un affichage instantané
+                      et une qualité visuelle parfaite, tout en optimisant
+                      l'espace de stockage et la rapidité de navigation sur
+                      mobile.
                     </p>
                   </div>
                 </motion.section>
@@ -238,11 +248,14 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
                   <div className="flex flex-wrap gap-2">
                     {[
                       "Next.js",
-                      "React",
+                      "Stripe",
+                      "Firebase",
+                      "Resend",
                       "TypeScript",
                       "Tailwind CSS",
-                      "Firebase",
-                      "Stripe",
+                      "Vercel",
+                      "OVH",
+                      "React",
                       "Framer Motion",
                       "Lucide React",
                     ].map((tech) => (
