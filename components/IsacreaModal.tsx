@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import Image from "next/image";
+import ProjectDetailsIsa from './ProjectDetailsIsa';
 
 interface IsacreaModalProps {
   isOpen: boolean;
@@ -55,6 +56,9 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
 
               {/* Content */}
               <div className="p-6 md:p-8 space-y-10">
+                {/* ProjectDetailsIsa - Placed at the top */}
+                <ProjectDetailsIsa />
+
                 {/* Section 1: Admin Dashboard */}
                 <motion.section
                   initial={{ opacity: 0, y: 20 }}
@@ -286,6 +290,7 @@ export default function IsacreaModal({ isOpen, onClose }: IsacreaModalProps) {
                     Visiter le site →
                   </a>
                 </motion.div>
+                
               </div>
             </div>
           </motion.div>
