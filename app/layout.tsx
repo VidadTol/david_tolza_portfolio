@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 
 // Meta tags complets avec Open Graph et Twitter Card
 export const metadata: Metadata = {
+  metadataBase: new URL('https://david-tolza.vercel.app'),
   title: "David Tolza | Développeur Web & Mobile Freelance à Castelmaurou",
   description:
     "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
@@ -52,7 +53,6 @@ export const metadata: Metadata = {
   verification: {
     google: "fbO0_dj9vDBLlPl7eUTcwrN5dg-BsmAJ0J1g_YnsieE",
   },
-  // Twitter Card
 
   // Robots et indexation
   robots: {
