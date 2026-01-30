@@ -20,12 +20,12 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
-// Meta tags complets avec Open Graph et Twitter Card
+// Meta tags complets
 export const metadata: Metadata = {
-  metadataBase: new URL('https://david-tolza.vercel.app'),
+  metadataBase: new URL('https://david-tolza.vercel.app/'),
   title: "David Tolza | Développeur Web & Mobile Freelance à Castelmaurou",
   description:
-    "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
+    "Créez un site qui raconte votre histoire. Développeur web freelance à Castelmaurou, j'allie la performance et la modernité de Next.js, React et Tailwind CSS pour concevoir vos solutions e-commerce, dashboards sur mesure et applications performantes. Parlons de votre projet !",
   keywords: [
     "développeur web Castelmaurou",
     "développeur web Toulouse",
@@ -44,11 +44,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://david-tolza.vercel.app/",
+    url: "https://david-tolza.vercel.app",
     siteName: "David Tolza - Développeur Web & Mobile",
     title: "David Tolza | Développeur Web & Mobile Freelance à Castelmaurou",
     description:
       "Créez un site qui raconte votre histoire. Développement web et mobile sur-mesure, moderne et performant.",
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+      }
+    ]
   },
   verification: {
     google: "fbO0_dj9vDBLlPl7eUTcwrN5dg-BsmAJ0J1g_YnsieE",
@@ -86,7 +93,7 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://david-tolza.vercel.app/",
+        "@id": "https://david-tolza.vercel.app",
         name: "David Tolza",
         url: "https://david-tolza.vercel.app/",
         image: "https://david-tolza.vercel.app/logo2.png",
@@ -105,7 +112,7 @@ export default function RootLayout({
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://david-tolza.vercel.app/",
+        "@id": "https://david-tolza.vercel.app",
         name: "David Tolza - Développement Web",
         image: "https://david-tolza.vercel.app/logo2.png",
         description: "Services de développement web et mobile sur-mesure",
@@ -146,7 +153,7 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        url: "https://david-tolza.vercel.app/",
+        url: "https://david-tolza.vercel.app",
         name: "David Tolza - Développeur Web & Mobile",
         description: "Portfolio et services de développement web et mobile",
       },
@@ -158,10 +165,10 @@ export default function RootLayout({
       <head>
         {/* Favicon - À créer et ajouter dans public/ */}
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/logo2.png" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://david-tolza.vercel.app/" />
+        <link rel="canonical" href="https://david-tolza.vercel.app" />
 
         {/* Preconnect pour les polices Google */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
