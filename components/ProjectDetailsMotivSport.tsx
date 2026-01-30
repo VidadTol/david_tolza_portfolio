@@ -27,7 +27,7 @@ const ProjectDetailsMotiv = () => {
     },
     {
       title: "Architecture Next.js",
-      desc: "Optimisation des performances (SSR/SSG) pour un rendu fluide sur mobile et desktop.",
+      desc: "Architecture Next.js robuste avec un focus sur l'expérience utilisateur et la rapidité d'exécution.",
       icon: <Zap className="text-blue-400" size={20} />
     },
     {
