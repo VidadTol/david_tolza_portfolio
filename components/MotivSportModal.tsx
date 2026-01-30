@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import Image from "next/image";
+import ProjectDetailsMotivSport from "./ProjectDetailsMotivSport";
 
 interface MotivSportModalProps {
   isOpen: boolean;
@@ -109,6 +110,9 @@ export default function MotivSportModal({
 
               {/* Content */}
               <div className="p-6 md:p-8 space-y-10">
+                {/* ProjectDetailsIsa - Placed at the top */}
+                <ProjectDetailsMotivSport />
+                
                 {/* Render all 6 slides */}
                 {slides.map((slide, index) => (
                   <motion.section
