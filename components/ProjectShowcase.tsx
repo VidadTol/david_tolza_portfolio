@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Pointer } from "lucide-react";
+import { Pointer, Github } from "lucide-react";
 import IsacreaModal from "./IsacreaModal";
 
 export default function ProjectShowcase() {
@@ -78,9 +78,19 @@ export default function ProjectShowcase() {
             </div>
 
             <div className="mt-8">
-              <p className="text-sm text-slate-200 italic mb-2">
+              <p className="text-sm text-slate-200 italic mb-4">
                 "Créativité, Écoute, Rigueur, analyse et résultat."
               </p>
+              <a
+                href="https://github.com/VidadTol/Architecture-E-Commerce/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="flex items-center gap-4 text-white hover:text-blue-400 transition-colors text-sm w-fit"
+              >
+                <Github size={20} />
+                <span>Voir l'architecture du projet sur GitHub</span>
+              </a>
             </div>
           </div>
 
