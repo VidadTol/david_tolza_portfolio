@@ -62,7 +62,7 @@ export default function Footer() {
               className="text-2xl mt-6 text-slate-400 hover:text-slate-200 cursor-pointer transition-all hover:underline hover:underline-offset-4"
               aria-label="Ouvrir le formulaire de contact"
             >
-              Ouvrire le formulaire →
+              Ouvrir le formulaire →
             </button>
           </div>
         )}
