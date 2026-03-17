@@ -15,12 +15,12 @@ export default function ServicesSection() {
   ];
 
   const services = [
+    "Dépannage, Maintenance & Accompagnement de proximité",
     "Création de sites vitrines et e-commerce sur mesure",
     "Refonte haute performance vers Next.js et React",
     "Optimisation de la vitesse et du référencement (SEO Google)",
     "Intégration d'APIs (Paiements, CMS, services tiers)",
     "Responsive design & Expérience utilisateur (UX)",
-    "Dépannage & maintenance technique continue",
     "Correction de bugs et support technique réactif",
   ];
 
