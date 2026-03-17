@@ -14,9 +14,9 @@ export default function Footer() {
           Prêt à collaborer ?
         </h2>
         <p className="text-slate-300 mb-12 text-lg md:text-2xl max-w-2xl mx-auto text-center space-y-4">
-          Un dépannage urgent, un bug à corriger ou un nouveau projet à lancer ? <br />
+          Un dépannage urgent, un bug à corriger <br /> ou un nouveau projet à lancer ? <br />
           <span className="block pt-4 bg-gradient-to-r md:text-1sxl from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-            Parlons-en pour redonner de la sérénité à votre environnement numérique.
+            Parlons-en pour que votre projet raconte votre histoire...
           </span>
         </p>
 
