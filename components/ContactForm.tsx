@@ -174,7 +174,7 @@ export default function ContactForm() {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          placeholder="Ex: Demande de devis pour un site e-commerce"
+          placeholder="Ex: Dépannage informatique, création web ou optimisation SEO."
           className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
         />
       </div>
