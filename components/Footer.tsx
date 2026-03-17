@@ -14,9 +14,9 @@ export default function Footer() {
           Prêt à collaborer ?
         </h2>
         <p className="text-slate-300 mb-12 text-lg md:text-2xl max-w-2xl mx-auto text-center space-y-4">
-          Un bug à corriger ou un nouveau projet à lancer ? <br />
+          Un dépannage urgent, un bug à corriger ou un nouveau projet à lancer ? <br />
           <span className="block pt-4 bg-gradient-to-r md:text-1sxl from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-            Parlons-en pour que votre site raconte votre histoire...
+            Parlons-en pour redonner de la sérénité à votre environnement numérique.
           </span>
         </p>
 
@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-16 pt-8 border-t border-slate-800/50">
           <p className="text-center text-slate-500 text-xs md:text-sm">
-            © 2026 David Tolza. Tous droits réservés.
+            © 2026 David Tolza EI. Tous droits réservés.
           </p>
         </div>
       </div>
