@@ -59,7 +59,7 @@ export default function ServicesSection() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent text-center drop-shadow-[0_2px_8px_rgba(59,130,246,0.6)]">
-              Développement Web & Mobile
+              Solutions Numériques & Web
             </h3>
 
             <ul className="text-white space-y-4 text-base md:text-lg w-full font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
