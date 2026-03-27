@@ -39,7 +39,7 @@ export default function HeroSection() {
             <p>
               Après{" "}
               <strong>22 ans dans le secteur de la télésurveillance</strong>,
-              j'ai choisi de mettre ma rigueur au profit du développement web.
+              j'ai choisi de mettre ma rigueur au profit du développement web et de l'accompagnement numérique.
               Je ne prétends pas être un expert, mais un{" "}
               <strong>apprenant passionné </strong> qui approfondit ses
               connaissances chaque jour pour construire des solutions fiables.
@@ -47,22 +47,21 @@ export default function HeroSection() {
             <p>
               Pour moi, un site internet doit fonctionner avec la même
               précision qu'un système de sécurité. C'est cette{" "}
-              <strong>exigence de fiabilité</strong> que j'apporte aujourd'hui
-              à chaque projet dont je m'occupe.
+              <strong>exigence de fiabilité</strong> que j'apporte à chaque projet, qu'il soit destiné
+              aux entreprises ou aux particuliers.
               <br />
               <br /> Ma force ? Une approche centrée sur l'expérience
-              utilisateur (UX). Je ne laisse rien au hasard : chaque bouton,
-              chaque menu et chaque interaction est pensé pour être simple et
-              efficace. Mon but est de créer des interfaces modernes et
-              fonctionnelles.
+              utilisateur (UX) et la pédagogie. Je ne laisse rien au hasard : chaque
+              interaction est pensée pour être simple, efficace et compréhensible. Mon but est de créer des interfaces modernes mais
+              accessibles, où l'utilisateur se sent capable et autonome.
             </p>
             <p>
               Diplômé <strong>RNCP 5 DWWM</strong>, je me spécialise dans la
-              création de sites sur-mesure et surtout dans la{" "}
-              <strong>résolution de problèmes</strong> : je répare et
-              j'optimise ce qui ne fonctionne plus pour vous offrir un outil
-              performant, avec l'honnêteté et la persévérance qui me
-              caractérisent.
+              création de sites sur-mesure, la{" "}
+              <strong>résolution de problèmes techniques</strong> et l'accompagnement des utilisateurs
+              vers l'autonomie numérique. Que ce soit pour optimiser votre présence web ou pour briser
+              les barrières de la technologie, j'apporte la même rigueur,
+              bienveillance et persévérance.
             </p>
           </div>
         </div>
