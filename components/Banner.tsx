@@ -21,13 +21,17 @@ export default function Banner() {
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Web & Mobile
             </span>
+            <br />
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              & Autonomie Numérique
+            </span>
           </h1>
         </div>
       </div>
 
       <div className="w-full flex justify-center px-2 text-center">
         <Typewriter
-          text="Votre histoire mérite un site sur mesure qui lui ressemble"
+          text="Un site sur mesure qui vous ressemble, et l'autonomie numérique que vous méritez."
           className="text-xl md:text-4xl mt-6 font-extrabold italic text-gradient-hero drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]"
         />
       </div>
