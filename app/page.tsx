@@ -6,6 +6,7 @@ import ProjectShowcase from "../components/ProjectShowcase";
 import MethodSection from "../components/MethodSection";
 import Separator from "../components/Separator";
 import ServicesSection from "../components/ServicesSection";
+import PedagogySection from "../components/PedagogySection";
 import Footer from "../components/Footer";
 import MotivSportShowcase from "@/components/MotivSportShowcase";
 
@@ -22,6 +23,8 @@ export default function Home() {
       <MethodSection />
       <Separator />
       <ServicesSection />
+      <Separator />
+      <PedagogySection />
       <Separator />
       <Footer />
     </main>
