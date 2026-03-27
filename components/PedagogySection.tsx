@@ -52,9 +52,9 @@ export default function PedagogySection() {
             </ul>
           </div>
 
-          <div className="bg-slate-900/40 border border-purple-900/30 rounded-lg p-6 md:p-8">
-            <p>
-              <strong>Au-delà du dépannage</strong>, je m'attache à ce que chaque utilisateur se sente rassuré et capable de manipuler ses outils seul après mon passage.
+          <div className="flex items-center justify-center py-8 md:py-12">
+            <p className="text-lg md:text-2xl lg:text-3xl font-bold text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(59,130,246,0.4)]">
+              Au-delà du dépannage, je m'attache à ce que chaque utilisateur se sente rassuré et capable de manipuler ses outils seul après mon passage.
             </p>
           </div>
         </div>
