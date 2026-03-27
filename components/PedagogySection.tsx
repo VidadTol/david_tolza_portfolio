@@ -57,6 +57,15 @@ export default function PedagogySection() {
               Au-delà du dépannage, je m'attache à ce que chaque utilisateur se sente rassuré et capable de manipuler ses outils seul après mon passage.
             </p>
           </div>
+
+          <div className="flex items-center justify-center pt-8">
+            <a
+              href="/assistance-seniors"
+              className="px-8 py-4 rounded-2xl font-bold text-xl bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:from-blue-700 hover:to-blue-600 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Découvrir mon accompagnement pour seniors
+            </a>
+          </div>
         </div>
       </div>
     </section>

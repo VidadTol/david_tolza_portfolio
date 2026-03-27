@@ -187,8 +187,8 @@ export default function AssistanceSeniorsPage() {
 
           {/* COLONNE DROITE : TEXTE + BOUTONS */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="text-gray-700 text-lg md:text-xl space-y-4">
-              <p className="text-lg leading-relaxed">
+            <div className="text-gray-700 text-lg md:text-xl space-y-4 text-justify">
+              <p className="text-lg leading-relaxed text-justify">
                 Après un parcours de{" "}
                 <span className="font-semibold text-blue-600">
                   22 ans
@@ -326,7 +326,7 @@ export default function AssistanceSeniorsPage() {
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">
                   {service.title}
                 </h3>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-gray-700 leading-relaxed text-justify">
                   {service.description}
                 </p>
               </div>
