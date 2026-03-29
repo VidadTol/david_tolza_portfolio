@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+import AssistanceSchemaScript from '@/components/assistance-seniors/AssistanceSchemaScript';
 
 export const metadata: Metadata = {
-  title: "David Tolza | Assistance Administrative & Informatique Seniors Castelmaurou",
+  title: "Assistance informatique & aide administrative à Castelmaurou – Votre allié numérique",
   description:
     "Technicien diplômé avec 22 ans d'expérience. Service d'aide administrative et numérique pour personnes âgées à Castelmaurou. Lutte contre l'isolement numérique.",
   keywords: [
@@ -21,5 +22,10 @@ export default function AssistanceSeniorsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <AssistanceSchemaScript />
+      {children}
+    </>
+  );
 }
