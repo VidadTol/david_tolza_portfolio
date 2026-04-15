@@ -89,7 +89,7 @@ export default function AssistanceHeroSection() {
                 href="tel:+33687232667"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-5 rounded-2xl font-bold text-xl transition-colors flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                <Phone className="w-6 h-6 mr-3" /> APPELER MAINTENANT
+                <Phone className="w-6 h-6 mr-3" /> APPELER MAINTENANT <br /> 06 87 23 26 67
               </a>
               <a
                 href="mailto:vidadtol31@gmail.com"
