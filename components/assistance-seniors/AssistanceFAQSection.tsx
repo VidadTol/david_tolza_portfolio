@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { HelpCircle } from "lucide-react";
 
-const faqs = [
+const faqs: { question: string; answer: string }[] = [
   {
-    question: "Combien coûte ce service et y a-t-il un crédit d'impôt ?",
+    question: "Combien coûte l'intervention ?",
     answer:
-      "Premier échange gratuit pour voir comment je peux vous aider. Tarifs transparents ensuite. Mon agrément 'Services à la Personne' (SAP) est en cours pour vous permettre de bénéficier de 50% de crédit d'impôt sur les tarifs.",
+      "Un premier contact téléphonique gratuit : Ce premier échange est essentiel. Il me permet d'identifier précisément vos problématiques et d'établir ma feuille de route. Ainsi, je prépare mon intervention en amont pour être efficace et structuré dès mon arrivée chez vous.\n\nUne tarification simple et sans surprise : Mes interventions sont facturées au temps passé, sur la base de 50 € par heure.\n\nExemples : 1h = 50 € | 1h30 = 75 € | 2h = 100 €.\n\nIl n'y a aucun frais caché ni devis complexe. Vous payez pour un résultat concret et un accompagnement personnalisé visant à vous rendre autonome avec vos outils.",
   },
   {
     question: "Venez-vous à domicile ?",
