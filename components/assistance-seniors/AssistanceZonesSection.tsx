@@ -1,10 +1,15 @@
 "use client";
 
-import { MapPin } from "lucide-react";
+import { MapPin, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const zones = [
   "Castelmaurou",
-  "Lapeyrouse-Fossat",
+  "Garidech",
+  "Saint-Jean",
+  "L'Union",
+  "Rouffiac-Tolosan",
+  "Montrabé",
   "Saint-Geniès-Bellevue",
   "Pechbonnieu",
   "Gratentour",
@@ -14,20 +19,21 @@ const zones = [
   "Saint-Alban",
   "Bruguières",
   "Fenouillet",
-  "Saint-Jean",
-  "L'Union",
-  "Rouffiac-Tolosan",
-  "Montrabé",
   "Beaupuy",
   "Verfeil",
-  "Garidech",
+  "Lapeyrouse-Fossat",
   "Montastruc-la-Conseillère",
   "Saint-Sulpice-la-Pointe",
   "Buzet-sur-Tarn",
   "Toulouse",
 ];
 
+const mainZones = zones.slice(0, 6);
+const otherZones = zones.slice(6);
+
 export default function AssistanceZonesSection() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <h2 className="text-5xl font-bold mb-16 text-center text-gray-900">
@@ -40,18 +46,66 @@ export default function AssistanceZonesSection() {
             Je me déplace à votre domicile
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        {/* VERSION MOBILE - Avec bouton "Voir plus" */}
+        <div className="md:hidden">
+          <div className="grid grid-cols-2 gap-4">
+            {mainZones.map((zone, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg p-3 text-center border-2 border-blue-200 hover:border-blue-500 transition-colors"
+              >
+                <p className="font-semibold text-gray-800 text-sm">{zone}</p>
+              </div>
+            ))}
+          </div>
+
+          {expanded && (
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              {otherZones.map((zone, index) => (
+                <div
+                  key={index + 6}
+                  className="bg-white rounded-lg p-3 text-center border-2 border-blue-200 hover:border-blue-500 transition-colors"
+                >
+                  <p className="font-semibold text-gray-800 text-sm">{zone}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors"
+          >
+            {expanded ? (
+              <>
+                <ChevronUp className="w-5 h-5" />
+                Voir moins
+              </>
+            ) : (
+              <>
+                <ChevronDown className="w-5 h-5" />
+                Voir les {otherZones.length} autres zones
+              </>
+            )}
+          </button>
+        </div>
+
+        {/* VERSION DESKTOP - Toutes les villes visibles */}
+        <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4">
           {zones.map((zone, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-4 text-center border-2 border-blue-200 hover:border-blue-500 transition-colors"
+              className="bg-white rounded-lg p-3 text-center border-2 border-blue-200 hover:border-blue-500 transition-colors"
             >
-              <p className="font-semibold text-gray-800">{zone}</p>
+              <p className="font-semibold text-gray-800 text-sm">{zone}</p>
             </div>
           ))}
         </div>
+
         <p className="text-center text-gray-600 mt-10 text-lg">
-          Rayon de <span className="font-bold text-blue-600">15 km autour de Castelmaurou</span>
+          Rayon de <span className="font-bold text-blue-600">15 km</span> <br />
+          autour de <span className="font-bold text-blue-600">Castelmaurou</span>
         </p>
       </div>
     </section>
