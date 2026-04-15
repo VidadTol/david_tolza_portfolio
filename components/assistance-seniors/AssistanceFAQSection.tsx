@@ -5,9 +5,9 @@ import { HelpCircle } from "lucide-react";
 
 const faqs: { question: string; answer: string }[] = [
   {
-    question: "Combien coûte l'intervention ?",
+    question: "Combien cela coûte-t-il ?",
     answer:
-      "Un premier contact téléphonique gratuit : Ce premier échange est essentiel. Il me permet d'identifier précisément vos problématiques et d'établir ma feuille de route. Ainsi, je prépare mon intervention en amont pour être efficace et structuré dès mon arrivée chez vous.\n\nUne tarification simple et sans surprise : Mes interventions sont facturées au temps passé, sur la base de 50 € par heure.\n\nExemples : 1h = 50 € | 1h30 = 75 € | 2h = 100 €.\n\nIl n'y a aucun frais caché ni devis complexe. Vous payez pour un résultat concret et un accompagnement personnalisé visant à vous rendre autonome avec vos outils.",
+      "Premier contact téléphonique gratuit, sans engagement.\n\nMes interventions sont facturées 50 € par heure.\n\nPas de frais caché, pas de devis complexe. Vous payez pour un résultat concret.",
   },
   {
     question: "Venez-vous à domicile ?",
@@ -45,7 +45,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         className="flex items-start justify-between w-full text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-bold text-2xl text-gray-900">{question}</span>
+        <span className="font-bold text-lg md:text-2xl text-gray-900">{question}</span>
         <HelpCircle
           className={`w-8 h-8 text-blue-600 flex-shrink-0 ml-4 transition-transform ${
             isOpen ? "rotate-180" : ""
